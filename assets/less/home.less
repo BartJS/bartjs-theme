@@ -13,6 +13,10 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+
     &--whitespace {
       margin-top: 3rem;
     }
@@ -32,6 +36,13 @@
 
   &__attachment {
     flex: 2;
+
+    @media (max-width: 600px) {
+      margin-top: 1rem;
+      &:not(&--showMobile) {
+        display: none;
+      }
+    }
   }
 
   .figure {
@@ -54,6 +65,16 @@
     background-position: calc(~"50% - 21rem") center;
     background-size: 30%;
     min-width: 1024px;
+
+    @media (max-width: 600px) {
+      background-position: center center;
+      background-size: cover;
+    }
+
+    @media (max-width: 1000px) {
+      min-width: auto;
+      background-position: left center;
+    }
   }
 
   &__content {
@@ -64,9 +85,24 @@
 
     color: @fontColor--light;
 
+    @media (max-width: 400px) {
+      iframe {
+        display: none;
+      }
+    }
+
     a {
       color: @fontColor--light;
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      padding-left: 0;
+      color: @fontColor--dark;
+
+      a {
+        color: @fontColor--dark;
+      }
     }
   }
 
@@ -102,6 +138,10 @@
   &__wrapper {
     .dynamicWidthWithMax();
     display: flex;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -111,6 +151,10 @@
       display: block;
       width: 10rem;
       margin-left: auto;
+
+      @media (max-width: 600px) {
+        margin: auto auto 1rem;
+      }
     }
   }
 
@@ -121,6 +165,10 @@
     font-size: @fontSize--medium;
     font-weight: 100;
     text-align: center;
+
+    @media (max-width: 600px) {
+      padding: 0 2rem;
+    }
 
     .meetupHeader__link {
       color: @fontColor--light;
@@ -172,6 +220,10 @@
   &__wrapper {
     .dynamicWidthWithMax();
     display: flex;
+
+    @media (max-width: 600px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__image {
@@ -182,6 +234,10 @@
       display: block;
       width: 20rem;
       margin-right: auto;
+
+      @media (max-width: 600px) {
+        margin: auto auto 3rem;
+      }
     }
   }
 
