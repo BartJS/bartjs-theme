@@ -1,0 +1,8 @@
+<nav class="pagination" role="navigation">
+    {{#if next}}
+        <a class="pagination__older" href="{{page_url next}}">&larr; Tidligere poster</a>
+    {{/if}}
+    {{#if prev}}
+    <a class="pagination__newer" href="{{page_url prev}}">Nyere poster &rarr;</a>
+    {{/if}}
+</nav>

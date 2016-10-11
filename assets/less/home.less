@@ -1,0 +1,205 @@
+
+.mainSection {
+  color: @fontColor--dark;
+  padding: 3rem 0;
+  font-size: 0.9rem;
+
+  &--noWhitespace {
+    padding: 0;
+  }
+
+  &__wrapper {
+    .dynamicWidthWithMax();
+    display: flex;
+    align-items: center;
+
+    &--whitespace {
+      margin-top: 3rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 9;
+
+    p {
+      margin: 0.5rem 0;
+      font-weight: 100;
+    }
+  }
+
+  &__attachment {
+    flex: 2;
+  }
+
+  .figure {
+    img, object {
+      display: block;
+      width: 15rem;
+    }
+
+    &--left {
+      float: left;
+    }
+  }
+}
+
+
+.podcastHeader {
+  overflow-x: hidden;
+  &__background {
+    background: url('../img/Podcast.svg') @fontColor--purple no-repeat;
+    background-position: calc(~"50% - 21rem") center;
+    background-size: 30%;
+    min-width: 1024px;
+  }
+
+  &__content {
+    .dynamicWidthWithMax();
+    padding: 2rem 0;
+    padding-left: 30%;
+    font-weight: 100;
+
+    color: @fontColor--light;
+
+    a {
+      color: @fontColor--light;
+      text-decoration: underline;
+    }
+  }
+
+  &__lastest {
+    margin-top: 0.5rem;
+  }
+}
+
+.podcastSubscribe {
+  padding: 0 1rem;
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    img {
+      height: 2rem;
+    }
+  }
+}
+
+.meetupHeader {
+  background: @fontColor--red;
+  padding: 3rem 0;
+
+  &__wrapper {
+    .dynamicWidthWithMax();
+    display: flex;
+  }
+
+  &__image {
+    flex: 1;
+
+    img {
+      display: block;
+      width: 10rem;
+      margin-left: auto;
+    }
+  }
+
+  &__content {
+    flex: 2;
+    padding: 0 4rem;
+    color: @fontColor--light;
+    font-size: @fontSize--medium;
+    font-weight: 100;
+    text-align: center;
+
+    .meetupHeader__link {
+      color: @fontColor--light;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.actionButton {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.2rem 2rem;
+  background: @fontColor--light;
+  color: currentColor;
+  transition: opacity 200ms ease-in;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+.listSubscribe {
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 1rem 0;
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.slackHeader {
+  background: @fontColor--darkBlue;
+  padding: 3rem 0;
+
+  &__wrapper {
+    .dynamicWidthWithMax();
+    display: flex;
+  }
+
+  &__image {
+    flex: 1;
+    transform: rotate(-15deg);
+
+    img {
+      display: block;
+      width: 20rem;
+      margin-right: auto;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    padding: 0 4rem;
+    color: @fontColor--light;
+    font-size: @fontSize--medium;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  &__link {
+    color: @fontColor--light;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

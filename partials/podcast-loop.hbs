@@ -1,0 +1,22 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="blogPost {{post_class}}">
+  <header>
+    <h1 class="blogPost__title"><a href="{{url}}">{{{title}}}</a></h1>
+
+    <div class="blogPost__metadata">
+      {{#author}}
+        <p class="blogPost__author">av <a href="{{url}}">{{name}}</a></p>
+      {{/author}}
+      <p class="blogPost__date">{{date published_at timeago="true"}}</p>
+    </div>
+  </header>
+
+  <div class="blogPost__content">
+    {{frame}}
+  </div>
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{> "pagination"}}

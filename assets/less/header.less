@@ -1,0 +1,124 @@
+
+.header {
+  background: url('../img/BartJS-mic.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__logo {
+    width: 2rem;
+    height: 2rem;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__logo {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    &__logo {
+      float: left;
+      margin: 1rem;
+    }
+  }
+
+  &__hero {
+    .dynamicWidthWithMax();
+    padding: 5rem 0 7rem;
+    color: #fff;
+
+    h2 {
+      font-size: @fontSize--large;
+      font-weight: 100;
+    }
+  }
+
+  &__nav {
+    .dynamicWidthWithMax();
+
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    li {
+      display: block;
+      display: flex;
+      align-items: stretch;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 1.3rem;
+    }
+
+    li:first-child a {
+      padding-left: 0;
+    }
+    li:last-child a {
+      padding-right: 0;
+    }
+  }
+
+  &__subHeader {
+    background: @fontColor--yellow;
+    color: @fontColor--dark;
+    padding: 1rem 0;
+
+    &__wrapper {
+      .dynamicWidthWithMax();
+      display: flex;
+      align-items: baseline;
+    }
+
+    &__title {
+      font-weight: 100;
+      font-size: 1.1rem;
+    }
+
+    &__tagline {
+      font-weight: 100;
+      font-size: 0.7rem;
+      margin-left: 1rem;
+    }
+
+    &__rssButton {
+      margin-left: auto;
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 100;
+      border: 1px solid @fontColor--dark;
+      border-radius: 0.2rem;
+      color: @fontColor--dark;
+      padding: 0.1rem 0.2rem;
+
+      &:hover, &:active {
+        text-decoration: none;
+        color: lighten(@fontColor--dark, 20%);
+        border-color: lighten(@fontColor--dark, 20%);
+      }
+    }
+  }
+}
+
+
+.nav__item {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+
+  &--right {
+    margin-left: auto;
+  }
+
+  img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

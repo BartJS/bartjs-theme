@@ -1,0 +1,46 @@
+<article class="blogPost {{post_class}}">
+  <header>
+    <h1 class="blogPost__title"><a href="{{url}}">{{{title}}}</a></h1>
+
+    <div class="blogPost__metadata">
+      {{#author}}
+        <p class="blogPost__author">av <a href="{{url}}">{{name}}</a></p>
+      {{/author}}
+      <p class="blogPost__date">{{date published_at timeago="true"}}</p>
+    </div>
+  </header>
+
+  <div class="blogPost__content">
+    {{content}}
+  </div>
+
+  {{#author}}
+  <footer class="blogPost__footer">
+    <figure class="blogPost__footer__figure">
+      <img src="{{image}}" alt="Mikael Brevik" />
+    </figure>
+    <div class="blogPost__footer__content">
+      <h2><a href="{{url}}">{{name}}</a></h2>
+      <p>{{bio}}</p>
+      {{#if twitter}}
+      <p>Kontakt {{name}}, ved en tweet til {{twitter}} eller besøk {{website}}.</p>
+      {{/if}}
+    </div>
+  </footer>
+  {{/author}}
+
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+    this.page.url = '{{url absolute="true"}}';
+    this.page.identifier = '{{id}}';
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//bartjs.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</article>

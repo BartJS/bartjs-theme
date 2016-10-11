@@ -1,0 +1,199 @@
+{{!< homepage_layout}}
+
+{{#get "posts" limit="3" filter="featured:true"}}
+<section class="mainSection mainSection--noWhitespace">
+  <div class="mainSection__wrapper">
+    <div class="mainSection__content">
+        <div class="summaryPost">
+          <h2>Viktige meldinger</h2>
+          <ol>
+            {{#foreach posts}}
+              <li class="summaryPost__item">
+                <article>
+                  <h3 class="summaryPost__title">
+                    <a href="{{url}}">{{{title}}}</a>
+                    <small class="summaryPost__metadata">
+                      {{#author}}
+                        <span class="summaryPost__author">av <a href="{{url}}">{{name}}</a></span>
+                      {{/author}}
+                      <span class="summaryPost__date">{{date published_at timeago="true"}}</span>
+                    </small>
+                  </h3>
+                </article>
+              </li>
+            {{/foreach}}
+          </ol>
+        </div>
+    </div>
+  </div>
+</section>
+{{/get}}
+
+<section class="mainSection">
+  <div class="mainSection__wrapper">
+    <figure class="figure figure--left">
+      <img src="{{asset "/img/hexalogo.svg"}}" alt="BartJS" />
+    </figure>
+    <div class="mainSection__content">
+      <h2>Hva er BartJS?</h2>
+      <p>Vi er en fullstack JavaScript-Meetup lokalisert i Trondheim. Vi tar for oss alt som har med JavaScript å gjøre, fra transpileringsnivå, til server-side til nye browser API-er og fundamental kunnskap for språk.</p>
+      <p>Dersom du er interessert i å delta, presentere eller har idéer til BartJS er det bare til å <a href="https://github.com/BartJS/meetups/issues/new">ta kontakt</a>!</p>
+      <p>Fra og med november 2015 har BartJS også en månedlig Podcast hvor vi diskuterer alt av JavaScript. Man kan høre på Podcasten via tjenester som iTunes eller se og lytte på alle på denne siden.</p>
+    </div>
+  </div>
+</section>
+
+{{#get "posts" limit="3" filter="tag:blogg,tag:meetup"}}
+<section class="mainSection mainSection--noWhitespace">
+  <div class="mainSection__wrapper">
+    <div class="mainSection__content">
+        <div class="summaryPost">
+          <h2>Siste innlegg</h2>
+          <ol>
+            {{#foreach posts}}
+              <li class="summaryPost__item">
+                <article>
+                  <h3 class="summaryPost__title">
+                    <a href="{{url}}">{{{title}}}</a>
+                    <small class="summaryPost__metadata">
+                      {{#author}}
+                        <span class="summaryPost__author">av <a href="{{url}}">{{name}}</a></span>
+                      {{/author}}
+                      <span class="summaryPost__date">{{date published_at timeago="true"}}</span>
+                    </small>
+                  </h3>
+                </article>
+              </li>
+            {{/foreach}}
+          </ol>
+        </div>
+    </div>
+  </div>
+</section>
+{{/get}}
+
+<section class="mainSection">
+  <header class="podcastHeader">
+    <div class="podcastHeader__background">
+      <hgroup class="podcastHeader__content">
+        <h2>BartJS Podcast</h2>
+        <p>
+          BartJS har en podcast om alt av JavaScript.
+          Hør episoder nå på
+          <a href="https://soundcloud.com/bartjs">soundcloud/bartjs</a>
+          eller
+          <a href="https://itunes.apple.com/us/podcast/bartjs-podcast/id1059505101?mt=2">subscribe på iTunes</a>
+        </p>
+
+        <div class="podcastHeader__lastest">
+          <iframe width="100%" height="130" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/187116733&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        </div>
+      </hgroup>
+    </div>
+  </header>
+
+  <article class="mainSection__wrapper mainSection__wrapper--whitespace">
+    <div class="mainSection__content">
+      <p>
+        BartJS prøver å være en månedlig Podcast og handler om alt av JavaScript. Fra nettleser API-er, til
+        transpilerte språk til Node.js og kjøring av JavaScript ifb. med IoT. Vi har et fast panel bestående
+        av <a href="https://twitter.com/mikaelbrevik">Mikael Brevik</a>, <a href="https://twitter.com/krakels">Marius Krakeli</a> og
+        <a href="https://twitter.com/larrifax">Kristian Tryggestad</a>.
+      </p>
+      <p>
+        Du kan høre nyeste episode av BartJS Podcast i avspilleren ovenfor,
+        eller bla i arkivet som finnes her på siden under <a href="/tag/podcast-episode/">Podcast-episoder.</a>
+      </p>
+      <p>
+        Ta kontakt om du har lyst til å <a href="https://github.com/BartJS/podcast/issues/new">være med på en episode</a>!
+      </p>
+    </div>
+
+    <aside class="podcastSubscribe mainSection__attachment">
+      <h3>Abonner på podcasten</h3>
+      <ul>
+        <li><a href="https://itunes.apple.com/us/podcast/bartjs-podcast/id1059505101?mt=2"><img src="{{asset "/img/badge_itunes-lrg.svg"}}" alt="iTunes" /></a></li>
+        <li><a href="https://soundcloud.com/bartjs"><img src="{{asset "/img/Soundcloud.svg"}}" alt="SoundCloud" /></a></li>
+      </ul>
+    </aside>
+  </article>
+</section>
+
+<section class="mainSection">
+  <header class="meetupHeader">
+    <div class="meetupHeader__wrapper">
+      <figure class="meetupHeader__image">
+        <img src="{{asset "/img/meetup.svg"}}" alt="Meetup.com" />
+      </figure>
+      <hgroup class="meetupHeader__content">
+        <p>
+          BartJS er alltid ute etter bidrag fra fagmiljøet.
+          Om du ønsker å delta send inn på
+          <a href="https://github.com/BartJS/meetups" class="meetupHeader__link">github/bartjs</a>.
+        </p>
+        <a class="actionButton" href="http://www.meetup.com/BartJS/">meetup.com/bartjs</a>
+      </hgroup>
+    </div>
+  </header>
+
+  <article class="mainSection__wrapper mainSection__wrapper--whitespace">
+    <aside class="mainSection__attachment listSubscribe">
+      <h3>Bidra til BartJS</h3>
+      <ul>
+        <li><a href="http://www.meetup.com/BartJS/">Meld deg på Meetup</a></li>
+        <li><a href="https://github.com/BartJS/meetups/issues/new">Send forslag</a></li>
+      </ul>
+    </aside>
+
+    <div class="mainSection__content">
+      <p>
+        I senter av BartJS er en Meetup-gruppe som møtes ca månedlig i Trondheim.
+        Vi er nå ca 350 medlemmer som alle er interesserte i å skape et godt fagmiljø
+        for JavaScript i Trondheim. BartJS er helt non-profit og det krever ingenting
+        å være medlem. Du kan melde deg på på <a href="http://www.meetup.com/BartJS/">Meetup.com</a>
+        nå for å bli medlem og få e-post når neste Meetup arrangeres.
+      </p>
+      <p>
+        For at BartJS skal kunne eksistere er vi avhengig av at folk engasjerer seg
+        og gjør litt innsats for å spre kunnskap og informasjon. Det betyr at dersom
+        du kjenner litt på interessen av å presentere på en uformell og
+        <a href="https://github.com/BartJS/organisering/blob/master/organizing-meetup.md">imøtekommende</a>
+        Meetup, kan du <a href="https://github.com/BartJS/meetups/issues/new">ta kontakt så kan vi hjelpe deg i gang</a>.
+      </p>
+      <p>
+        Om det er noen spørsmål rundt Meetup-en, hvordan du kan bidra, eller bare av generell nyskjerrighet,
+        kan du også kontakte oss på <a href="http://slack.bartjs.io/">Slack</a>. Se mer informasjon om dette nedenfor.
+      </p>
+    </div>
+  </article>
+</section>
+
+<section class="mainSection">
+  <header class="slackHeader">
+    <div class="slackHeader__wrapper">
+      <hgroup class="slackHeader__content">
+        <p>
+          BartJS har et eget Slack-team hvor vi prøver å starte et nasjonalt JS-community.
+        </p>
+        <a class="actionButton" href="http://slack.bartjs.io/">slack.bartjs.io</a>
+      </hgroup>
+      <figure class="slackHeader__image">
+        <img src="{{asset "/img/slack.svg"}}" alt="Slack.com" />
+      </figure>
+    </div>
+  </header>
+
+  <article class="mainSection__wrapper mainSection__wrapper--whitespace">
+    <div class="mainSection__content">
+      <p>Slack-teamet er et forsøk på å starte et nasjonalt community rundt JavaScript i Norge. Vi ser at det finnes mange ressurser rundt omkring, men at det ikke er et naturlig møtested.</p>
+      <p>Vi håper at Slack-teamet kan hjelpe til med å løse dette. I tillegg bruker vi det internt i BartJS for å diskutere og planlegge aktiviteter som kan se dagens lys. Dersom du ønsker å ta del i dette, er det fritt frem å kontakte oss.</p>
+    </div>
+
+    <aside class="mainSection__attachment listSubscribe">
+      <h3>Delta i diskusjonen</h3>
+      <ul>
+        <li><a href="http://slack.bartjs.io/">Logg inn på Slack</a></li>
+      </ul>
+    </aside>
+  </article>
+</section>

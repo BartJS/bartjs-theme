@@ -1,0 +1,29 @@
+{
+  "name": "bartjs-theme",
+  "version": "1.0.0",
+  "description": "BartJS Ghost Theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "lessc --autoprefix --npm-import --include-path=assets/less assets/less/app.less assets/css/site.css",
+    "build:prod": "npm run build:less -- --clean-css",
+    "watch": "onchange \"assets/less/**/*.{less,css}\" -- npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartjs/bartjs-theme.git"
+  },
+  "keywords": [],
+  "author": "Mikael Brevik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartjs/bartjs-theme/issues"
+  },
+  "homepage": "https://github.com/bartjs/bartjs-theme#readme",
+  "devDependencies": {
+    "less": "^2.7.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "less-plugin-npm-import": "^2.1.0",
+    "onchange": "^3.0.2"
+  }
+}

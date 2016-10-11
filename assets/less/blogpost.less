@@ -1,0 +1,83 @@
+.blogPost {
+  .dynamicWidthWithMax();
+  padding: 4rem;
+  color: @fontColor--dark;
+
+  &__title {
+    font-weight: 100;
+    font-size: @fontSize--large;
+  }
+
+  &__metadata {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    color: @fontColor--mediumDark;
+  }
+
+  &__author {
+    border-bottom: 1px solid @fontColor--mediumDark;
+    padding: 0.3rem;
+  }
+
+  &__date {
+    padding: 0.3rem;
+    padding-left: 1.2rem;
+    background: url('../img/access-time.svg') left center no-repeat;
+    background-size: 1rem;
+  }
+
+  &__content {
+    ul, ol, p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    h2, h3, h4, h5 {
+      margin: 1rem 0;
+    }
+
+    ul, ol {
+      margin-left: 2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__footer {
+    border-top: 5px solid @fontColor--yellow;
+    display: flex;
+    padding: 4rem;
+    align-items: center;
+    margin-top: 4rem;
+
+    &__figure {
+      overflow: hidden;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &__content {
+      flex: 1;
+      margin-left: 1rem;
+      font-size: 0.9rem;
+
+      p {
+        font-weight: 100;
+      }
+
+      h2 {
+        font-weight: 100;
+      }
+    }
+  }
+}

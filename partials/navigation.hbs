@@ -1,0 +1,25 @@
+<nav class="header__nav">
+  <ul>
+    {{#foreach navigation}}
+      <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
+        <a href="{{url absolute="true"}}">{{label}}</a>
+      </li>
+    {{/foreach}}
+
+    <li class="nav__item nav__item--right">
+      <a href="https://twitter.com/_bartjs">
+        <img src="{{asset "/img/twitter.svg"}}" alt="Github" />
+      </a>
+    </li>
+    <li class="nav__item nav__item">
+      <a href="https://github.com/bartjs">
+        <img src="{{asset "/img/github.svg"}}" alt="Github" />
+      </a>
+    </li>
+    <li class="nav__item nav__item">
+      <a href="https://facebook.com/bartjs.io">
+        <img src="{{asset "/img/facebook.svg"}}" alt="Facebook" />
+      </a>
+    </li>
+  </ul>
+</nav>

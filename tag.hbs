@@ -1,0 +1,9 @@
+{{!< default }}
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+  {{> short-post}}
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="630px" height="630px" viewBox="0 0 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>New color: Vinrød Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="262 0.541477137 524 150.020739 524 448.979261 262 598.458523 -7.10542736e-15 448.979261 -1.70530257e-13 150.020739"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="5" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-5" points="262 0.541477137 524 150.020739 524 448.979261 262 598.458523 -7.10542736e-15 448.979261 -1.70530257e-13 150.020739"></polygon>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="524" height="597.917046" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="524" height="597.917046" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-color:-Vinrød-Copy-4">
+            <g id="Group-2" filter="url(#filter-1)" transform="translate(53.000000, 16.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Polygon-1" fill="#D8D8D8" xlink:href="#path-2"></use>
+                <g id="javascript-736400" mask="url(#mask-3)">
+                    <g transform="translate(-37.902351, 0.000000)">
+                        <rect id="Rectangle-path" fill="#F7DF1E" x="0" y="0" width="598.857143" height="598.053712"></rect>
+                        <rect id="Rectangle-10" fill-opacity="0.159999996" fill="#FFFFFF" x="300" y="9" width="262" height="605"></rect>
+                        <g id="Group" filter="url(#filter-4)" stroke-width="1" fill="none" transform="translate(57.632898, 242.151659)">
+                            <path d="M248.326069,91.4377934 L241.965319,84.4951289 L235.720219,90.7435269 C227.509069,99.1904354 216.637969,106.1331 206.576419,109.257299 C195.127069,112.844342 177.548269,112.844342 165.520669,109.025877 C153.955669,105.554544 138.921169,97.4547692 129.206569,89.7021273 C102.954018,68.6427117 77.3953683,57.1873153 59.5852683,58.344426 C54.6123182,58.6915593 49.5237182,59.84867 46.7481182,61.352914 C41.4282182,64.0142687 34.1422682,70.9569332 33.1014182,74.3125543 C31.9449182,78.0153087 33.4483682,84.0322846 36.1083182,86.4622172 C39.3465182,89.354994 47.7889682,89.1235719 55.0749183,85.8836618 C61.7826183,82.8751739 63.9799683,82.8751739 66.4086183,85.5365286 C69.8781183,89.354994 68.8372683,92.7106152 62.2452183,99.1904354 C44.5507682,116.199963 22.9242181,112.381498 5.46106806,89.1235719 C0.256818044,82.1809074 0.141168044,81.9494853 0.141168044,73.0397325 C0.141168044,62.1628915 3.14806806,51.6331837 8.46796808,43.5334085 C22.1146681,22.9368372 49.7550182,7.66297539 82.1370184,2.80311025 C100.756668,0.0260444638 143.200219,0.0260444638 158.234719,2.80311025 C180.902119,7.08442001 200.100019,14.2585066 214.671919,23.8625258 C221.610919,28.4909688 235.141969,41.6820313 238.148869,46.6576075 C239.189719,48.3932736 240.693169,49.8975176 241.502719,49.8975176 C242.196619,49.8975176 245.203519,46.7733186 248.094769,43.0705642 C270.646519,13.7956623 314.940469,-1.47819951 370.799419,0.488888762 C416.82812,2.22455488 443.08067,11.0185965 464.82287,31.84659 C477.08177,43.6491196 483.55817,57.7658707 483.55817,73.1554436 C483.55817,79.5195527 482.97992,81.486641 480.20432,85.8836618 C475.57832,93.1734595 463.78202,103.934589 457.30562,106.943077 C445.27802,112.381498 431.16872,109.257299 420.06632,98.7275911 C416.13422,95.0248367 415.32467,93.4048816 415.32467,89.9335494 C415.32467,83.4537292 418.90982,82.2966185 428.04617,85.7679507 C436.71992,89.0078608 444.58412,89.4707051 447.12842,86.8093504 C450.01967,84.0322846 451.06052,77.4367533 449.44142,73.5025768 C447.12842,67.9484452 439.26422,61.8157583 431.86262,59.6172479 C420.29762,56.2616267 404.56922,59.2701146 386.87477,68.1798674 C379.241869,71.9983328 359.465719,85.1893953 349.982419,92.8263263 C342.580819,98.7275911 323.035969,108.33161 314.130919,110.530121 C304.647619,112.728631 293.429569,113.538609 285.796669,112.381498 C271.803019,110.182987 259.197169,103.124612 248.326069,91.4377934 Z" id="path2878" fill="#2E2E2C" transform="translate(241.849669, 56.613856) scale(1, -1) translate(-241.849669, -56.613856) "></path>
+                        </g>
+                    </g>
+                </g>
+                <mask id="mask-7" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Polygon-1-Copy" stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="26">
+                    <use mask="url(#mask-8)" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
