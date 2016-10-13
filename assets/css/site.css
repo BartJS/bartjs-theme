@@ -164,7 +164,6 @@ a:active {
   margin-left: 1rem;
 }
 .header__subHeader__rssButton {
-  margin-left: auto;
   display: block;
   font-size: 0.8rem;
   font-weight: 100;
@@ -172,6 +171,18 @@ a:active {
   border-radius: 0.2rem;
   color: #323232;
   padding: 0.1rem 0.2rem;
+  margin-left: 0.5rem;
+}
+.header__subHeader__rssButton--margin {
+  margin-left: auto;
+}
+@media (max-width: 400px) {
+  .header__subHeader__rssButton {
+    margin-left: auto;
+  }
+  .header__subHeader__rssButton--margin {
+    display: none;
+  }
 }
 .header__subHeader__rssButton:hover,
 .header__subHeader__rssButton:active {
