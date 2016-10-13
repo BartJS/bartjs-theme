@@ -65,7 +65,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .header__hero {
     width: 40%;
     max-width: 2500px;
@@ -87,7 +87,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .header__nav {
     width: 40%;
     max-width: 2500px;
@@ -148,7 +148,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .header__subHeader__wrapper {
     width: 40%;
     max-width: 2500px;
@@ -236,7 +236,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .mainSection__wrapper {
     width: 40%;
     max-width: 2500px;
@@ -330,7 +330,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .podcastHeader__content {
     width: 40%;
     max-width: 2500px;
@@ -402,7 +402,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .meetupHeader__wrapper {
     width: 40%;
     max-width: 2500px;
@@ -498,7 +498,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .slackHeader__wrapper {
     width: 40%;
     max-width: 2500px;
@@ -560,7 +560,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .blogPost {
     width: 40%;
     max-width: 2500px;
@@ -683,7 +683,7 @@ a:visited {
     max-width: 2000px;
   }
 }
-@media (min-width: 5400px) {
+@media (min-width: 3200px) {
   .pagination {
     width: 40%;
     max-width: 2500px;
