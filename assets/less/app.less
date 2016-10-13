@@ -24,6 +24,7 @@ html {
 @fontSize--medium: 1.3rem;
 
 @page__maxWidth: 900px;
+@page__maxWidthLarge: 2000px;
 @page__minWidth: 330px;
 
 body {
@@ -47,6 +48,14 @@ a:hover, a:visited {
   max-width: @page__maxWidth;
   min-width: @page__minWidth;
   margin: 0 auto;
+  @media (min-width: 1900px) {
+    width: 50%;
+    max-width: @page__maxWidthLarge;
+  }
+  @media (min-width: 5400px) {
+    width: 40%;
+    max-width: 2500px;
+  }
 }
 
 @import './header.less';
