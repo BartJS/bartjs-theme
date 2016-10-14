@@ -11,7 +11,10 @@
   &__wrapper {
     .dynamicWidthWithMax();
     display: flex;
-    align-items: center;
+
+    :first-child {
+      margin-right: 1rem;
+    }
 
     @media (max-width: 600px) {
       flex-direction: column;
@@ -31,6 +34,10 @@
     p {
       margin: 0.5rem 0;
       font-weight: 100;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 

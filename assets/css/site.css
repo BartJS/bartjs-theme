@@ -238,9 +238,6 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media (min-width: 1900px) {
   .mainSection__wrapper {
@@ -253,6 +250,9 @@ a:active {
     width: 40%;
     max-width: 2500px;
   }
+}
+.mainSection__wrapper :first-child {
+  margin-right: 1rem;
 }
 @media (max-width: 600px) {
   .mainSection__wrapper {
@@ -283,6 +283,9 @@ a:active {
 .mainSection__content p {
   margin: 0.5rem 0;
   font-weight: 100;
+}
+.mainSection__content p:first-child {
+  margin-top: 0;
 }
 .mainSection__attachment {
   -webkit-box-flex: 2;
