@@ -209,6 +209,7 @@ a:active {
 .pageFooter {
   color: #323232;
   padding: 4rem 0;
+  margin-top: 3rem;
   text-align: center;
   background: #FAFAFA;
   border-top: 1px solid #F3F3F3;
@@ -262,7 +263,7 @@ a:active {
   }
 }
 .mainSection__wrapper--whitespace {
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .mainSection__content {
   display: -webkit-box;
