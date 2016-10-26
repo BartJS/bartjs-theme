@@ -251,7 +251,7 @@ a:active {
     max-width: 2500px;
   }
 }
-.mainSection__wrapper :first-child {
+.mainSection__wrapper > :first-child {
   margin-right: 1rem;
 }
 @media (max-width: 600px) {
