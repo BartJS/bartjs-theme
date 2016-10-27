@@ -645,6 +645,9 @@ a:active {
 .blogPost__content li {
   margin-bottom: 0.5rem;
 }
+.blogPost__content img {
+  max-width: 100%;
+}
 .blogPost__footer {
   border-top: 5px solid #F0DB4F;
   display: -webkit-box;
