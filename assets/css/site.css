@@ -636,7 +636,8 @@ a:active {
 .blogPost__content h3,
 .blogPost__content h4,
 .blogPost__content h5 {
-  margin: 1rem 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 .blogPost__content ul,
 .blogPost__content ol {
