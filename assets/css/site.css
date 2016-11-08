@@ -701,6 +701,9 @@ a:active {
 .summaryPost__metadata {
   font-size: 0.9rem;
 }
+.summaryPost h2 {
+  margin-bottom: .8rem;
+}
 .pagination {
   width: 90%;
   max-width: 900px;
